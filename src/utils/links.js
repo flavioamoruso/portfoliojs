@@ -5,6 +5,7 @@ import { IoIosContacts } from "react-icons/io";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../context";
 
 const link = [
   {
@@ -25,11 +26,17 @@ const link = [
 ];
 
 const LinkComponent = ({ classLink }) => {
+  const { closeSidebar } = useGlobalContext();
   return (
     <ul className={classLink}>
       {link.map((link) => {
         return (
-          <Link key={link.text} to={link.url} className="nav-items">
+          <Link
+            key={link.text}
+            to={link.url}
+            className="nav-items"
+            onClick={closeSidebar}
+          >
             <div className="nav-link">
               {link.icon}
               <h5 className="nav-text">{link.text}</h5>
