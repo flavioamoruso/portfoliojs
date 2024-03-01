@@ -1,4 +1,4 @@
-import { Navbar, Sidebar } from "./components";
+import Navbar from "./components/Navbar";
 import HomeScreen from "./screen/Homescreen";
 import Projects from "./screen/Projects";
 import About from "./screen/About";
@@ -10,11 +10,9 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Sidebar />
       <Routes>
         <Route path="/" Component={HomeScreen} />
         <Route path="/projects" Component={Projects} />
-        <Route path="/about" Component={About} />
         <Route path="/contact" Component={Contact} />
         <Route path="*" Component={ErrorScreen} />
       </Routes>
