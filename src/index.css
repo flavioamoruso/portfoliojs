@@ -379,7 +379,7 @@ SIDEBAR STYLE
   right: 0;
   z-index: 2;
   width: 100%;
-  background: white;
+  background: var(--nav-colors-2);
   transform: translateX(-100%);
   transition: var(--transition);
 }

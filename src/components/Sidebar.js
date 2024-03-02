@@ -9,8 +9,7 @@ const Sidebar = () => {
   return (
     <>
       <aside
-        className={`${isSidebarOpen ? "show-sidebar sidebar" : "sidebar"}`}
-        style={{ backgroundColor: "gray" }}
+        className={`${isSidebarOpen ? "show-sidebar sidebar sfondo-side" : "sidebar"}`}
       >
         <div className="sidebar-content">
           <header className="nav-header container">
