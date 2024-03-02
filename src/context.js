@@ -1,9 +1,22 @@
-import { useState, useContext, createContext } from "react";
+import { useState, useContext, createContext, useEffect } from "react";
 
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [theme, setTheme] = useState("light-mode");
+
+  const cambiaTema = () => {
+    if (theme === "light-mode") {
+      setTheme("dark-mode");
+    } else {
+      setTheme("light-mode");
+    }
+  };
+
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme]);
 
   const openSidebar = () => {
     setIsSidebarOpen(true);
@@ -18,6 +31,7 @@ const AppProvider = ({ children }) => {
         isSidebarOpen,
         openSidebar,
         closeSidebar,
+        cambiaTema,
       }}
     >
       {children}

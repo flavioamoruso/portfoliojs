@@ -3,6 +3,7 @@ import { AiFillHome, AiFillMessage } from "react-icons/ai";
 import { IoCodeWorking } from "react-icons/io5";
 import { IoIosContacts } from "react-icons/io";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import Switch from "../components/Switch";
 import { FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
@@ -65,17 +66,20 @@ const socialLink = [
 
 const SocialComponent = ({ classSocial }) => {
   return (
-    <ul className={classSocial} style={{ display: "flex" }}>
-      {socialLink.map((link) => {
-        return (
-          <li key={link.url} className="nav-item">
-            <a href={link.url} alt={link.url} className="nav-link">
-              {link.icon}
-            </a>
-          </li>
-        );
-      })}
-    </ul>
+    <>
+      {/* <Switch /> */}
+      <ul className={classSocial} style={{ display: "flex" }}>
+        {socialLink.map((link) => {
+          return (
+            <li key={link.url} className="nav-item">
+              <a href={link.url} alt={link.url} className="nav-link">
+                {link.icon}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </>
   );
 };
 

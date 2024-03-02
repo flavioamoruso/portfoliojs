@@ -2,7 +2,6 @@
 
 :root {
   /* Colors */
-  --nav-colors-2: #b8d7e8;
   --icon: #b5179eff;
   --light-pink: #ffc6ff;
   --text-color: #efefef;
@@ -41,13 +40,25 @@
 
 body {
   background-color: var(--nav-colors-2);
-  color: var(--dark-text-color);
+  color: var(--text-color);
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Madimi One", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+/* Dark mode */
+
+.light-mode {
+  --nav-colors-2: #E9F1F7;
+  --text-color: #0A369D;
+}
+
+.dark-mode {
+  --nav-colors-2: #4c4b4b;
+  --text-color: #ffffff;
 }
 
 
@@ -1080,3 +1091,4 @@ END FOOTER STYLE
     opacity: 1;
   }
 }
+

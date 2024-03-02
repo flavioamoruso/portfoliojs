@@ -2,6 +2,7 @@ import React from "react";
 import { LinkComponent, SocialComponent } from "../utils/links";
 import { TiDelete } from "react-icons/ti";
 import { useGlobalContext } from "../context";
+import Switch from "./Switch";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -24,6 +25,7 @@ const Sidebar = () => {
             <LinkComponent classLink="sidebar-link" />
           </div>
 
+          <Switch />
           <SocialComponent classSocial="sidebar-social" />
         </div>
       </aside>

@@ -3,6 +3,7 @@ import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { LinkComponent, SocialComponent } from "../utils/links";
 import { useGlobalContext } from "../context";
+import Switch from "./Switch";
 
 const Navbar = () => {
   const { openSidebar } = useGlobalContext();
@@ -20,6 +21,7 @@ const Navbar = () => {
           </div>
         </header>
         <LinkComponent classLink="nav-links" />
+        <Switch />
         <SocialComponent classLink="social-top" />
       </div>
     </nav>
