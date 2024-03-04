@@ -5,6 +5,7 @@
   --icon: #b5179eff;
   --light-pink: #ffc6ff;
   --text-color: #efefef;
+  --btn-up: #ffff;
   --dark-text-color: rgb(44, 44, 44);
   --delete-color: #df372b;
   --divider-color: rgba(0, 0, 0, 0.1);
@@ -54,12 +55,16 @@ body {
 .light-mode {
   --nav-colors-2: #E9F1F7;
   --text-color: #0A369D;
+  --btn-up: #1a44a5;
 }
 
 .dark-mode {
   --nav-colors-2: #4c4b4b;
   --text-color: #ffffff;
+  --btn-up: #000;
 }
+
+
 
 
 
@@ -353,18 +358,20 @@ END NAV STYLE
 }
 
 .btn-primary {
-  background-color: black;
+  background-color: var(--btn-up);
   color: rgb(255, 255, 255);
   font-size: 0.8rem;
   text-transform: uppercase;
-  padding: 0.9rem 1.8rem;
+  padding: 10px;
   width: fit-content;
 }
 
 .btn-primary:hover {
-  background-color: red;
+  background-color: var(--btn-up);
   transform: scale(1.02);
 }
+
+
 
 /*
 ====================
@@ -550,7 +557,7 @@ HERO STYLE
   }
 
   .home-hero-img {
-    grid-column: 20/-1;
+    grid-column: 8/-1;
   }
 }
 /*=== ABOUT HERO ===*/
