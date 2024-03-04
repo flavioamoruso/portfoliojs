@@ -16,14 +16,19 @@ const HomeScreen = () => {
       <div className="home-hero" data-aos="zoom-in">
         <div className="home-hero-text">
           <div className="home-hero-title">
-            <h2 className="brand-color">Salve a tutti</h2>
-            <h4>Mi chiamo Flavio Amoruso e sono un web developer junior</h4>
+            <p className="brand-color">Salve a tutti</p>
+            <h2 className="brand-color">Il mio nome è Flavio</h2>
+            <h4>Sono un Full Stack Developer Junior</h4>
           </div>
 
-          <p>Questo è il mio sito web personale dove mostro le mie skills</p>
+          <p>
+            "Benvenuti nel mio portfolio creativo! Esplora il mio lavoro
+            variegato e innovativo, dove arte, design e tecnologia si fondono
+            per ispirare e stupire."
+          </p>
 
-          <Link to="/projects" className="btn btn-primary">
-            Scopri di più
+          <Link to="/contact" className="btn btn-primary">
+            Contattami
           </Link>
         </div>
         <div className="home-hero-img focus-in-contract-bck">
