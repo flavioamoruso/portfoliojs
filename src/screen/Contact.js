@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+
+function Animation() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+}
 const Contact = () => {
   return (
-    <div class="form-container">
+    <div class="form-container" data-aos="zoom-in">
       <div class="form">
         <span class="heading">Contattami</span>
         <input placeholder="Nome" type="text" class="input" />
@@ -16,17 +23,8 @@ const Contact = () => {
         ></textarea>
         <div class="button-container">
           <div class="send-button" style={{ cursor: "pointer" }}>
-            Send
+            Invia
           </div>
-          {/* <div class="reset-button-container">
-            <div
-              id="reset-btn"
-              class="reset-button"
-              style={{ cursor: "pointer" }}
-            >
-              Reset
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
@@ -34,3 +32,4 @@ const Contact = () => {
 };
 
 export default Contact;
+export { Animation };
