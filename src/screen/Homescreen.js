@@ -27,9 +27,15 @@ const HomeScreen = () => {
             per ispirare e stupire."
           </p>
 
-          <Link to="/contact" className="btn btn-primary">
-            Contattami
-          </Link>
+          <span className="row">
+            {" "}
+            <Link to="/contact" className="btn btn-primary">
+              Contattami
+            </Link>
+            <span className="btn btn-primary" style={{ marginLeft: "10px" }}>
+              <a href="#section">Scopri di più</a>
+            </span>
+          </span>
         </div>
         <div className="home-hero-img focus-in-contract-bck">
           <Lottie
