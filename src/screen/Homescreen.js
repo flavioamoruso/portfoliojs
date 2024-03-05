@@ -13,7 +13,7 @@ function Animation() {
 const HomeScreen = () => {
   return (
     <>
-      <div className="home-hero" data-aos="zoom-in">
+      <div className="home-hero" data-aos="fade-left">
         <div className="home-hero-text">
           <div className="home-hero-title">
             <p className="brand-color">Salve a tutti</p>

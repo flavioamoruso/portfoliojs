@@ -57,7 +57,10 @@ body {
   --nav-colors-2: #E9F1F7;
   --text-color: #0A369D;
   --btn-up: #1a44a5;
-  --input-back:#111d90;
+  --input-back:#4c97c6;
+  --left-input:#049db8;
+  --text-input:#002733;
+  --button-input:#E9F1F7;
 }
 
 .dark-mode {
@@ -65,6 +68,9 @@ body {
   --text-color: #ffffff;
   --btn-up: #000;
   --input-back:#000;
+  --left-input:#049db8;
+  --text-input:#ffffff;
+  --button-input:#001925;
 }
 
 
@@ -596,29 +602,29 @@ HERO STYLE
 }
 
 /*=== CONTACT HERO ===*/
-.orange {
+/* .orange {
   color: var(--nav-colors-2);
-}
+} */
 
 .form-container {
-  max-width: 700px;
+  text-align: center;
   margin: 30px;
   background-color: var(--input-back);
-  padding: 30px;
-  border-left: 5px solid #0637b4;
+  padding: 35px;
+  border-left: 5px solid #002733;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
 }
 
 .heading {
   display: block;
-  color: white;
+  color: var(--text-input);
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 20px;
 }
 
 .form-container .form .input {
-  color: #87a4b6;
+  color: white;
   width: 100%;
   background-color: #002733;
   border: none;
@@ -640,7 +646,7 @@ HERO STYLE
   border: none;
   outline: none;
   background-color: #013747;
-  color: var(--nav-colors-2);
+  color: white;
   font-weight: bold;
   resize: none;
   max-height: 150px;
@@ -655,9 +661,9 @@ HERO STYLE
 
 .form-container .form .button-container .send-button {
   flex-basis: 70%;
-  background: var(--nav-colors-2);
+  background: var(--button-input);
   padding: 10px;
-  color: #001925;
+  color: rgb(38, 147, 168);
   text-align: center;
   font-weight: bold;
   border: 1px solid black;
@@ -670,6 +676,9 @@ HERO STYLE
   color:white;
 }
 
+.no-button{
+  display: none;
+}
 
 /*
 ====================
@@ -691,7 +700,7 @@ HOMESCREEN STYLE
   width: 100%;
 }
 
-.form-container {
+/* .form-container {
   display: -moz-grid;
   display: -ms-grid;
   display: -webkit-grid;
@@ -700,9 +709,9 @@ HOMESCREEN STYLE
   -webkit-justify-content: flex-start;
   -ms-justify-content: flex-start;
   justify-content: flex-start;
-}
+} */
 
-.form-container form {
+/* .form-container form {
   display: -moz-grid;
   display: -ms-grid;
   display: -webkit-grid;
@@ -770,7 +779,7 @@ form label .drink {
   .search-bar .result {
     align-self: left;
   }
-}
+} */
 
 /*
 ====================
@@ -784,7 +793,7 @@ ABOUTSCREEN STYLE
 ====================
 */
 
-.about-value {
+/* .about-value {
   margin: 0 auto;
   background-color: var(--extra-light-gray);
 }
@@ -872,7 +881,7 @@ ABOUTSCREEN STYLE
     grid-template-columns: 1fr 1fr 1fr 1fr;
     flex-wrap: wrap;
   }
-}
+} */
 
 /*
 ====================
