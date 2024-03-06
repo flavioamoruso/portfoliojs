@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import HomeScreen from "./screen/Homescreen";
-import Projects from "./screen/Projects";
+import Projects from "./screen/ProjectsScreen";
 import Contact from "./screen/Contact";
 import ErrorScreen from "./screen/ErrorScreen";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
