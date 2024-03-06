@@ -1,31 +1,20 @@
 import React from "react";
-import styled from "styled-components";
+import Work from "../components/Projects/work";
+import { projects } from "../constants";
 
-const StyledProjects = styled.section`
-  .section-bold {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-  }
-`;
-
-const ProjectsScreen = () => {
+function ProjectsScreen() {
   return (
-    <>
-      <StyledProjects>
-        <section className="section-bold">
-          <h2 style={{ marginTop: "20px" }}>
-            Benvenuto al mio portfolio online!
-          </h2>
-          <p style={{ marginTop: "15px" }}>
-            Sono entusiasta di mostrarti una serie di progetti che ho
-            realizzato. Prenditi il tempo per esplorare e non esitare a
-            contattarmi se hai domande o feedback.
-          </p>
-        </section>
-      </StyledProjects>
-    </>
+    <div>
+      {projects.map((project, ind) => (
+        <Work
+          key={ind}
+          title={project.title}
+          body={project.body}
+          tags={project.tags}
+        />
+      ))}
+    </div>
   );
-};
+}
 
 export default ProjectsScreen;
