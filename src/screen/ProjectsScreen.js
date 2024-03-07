@@ -1,20 +1,29 @@
-import React from "react";
-import Work from "../components/Projects/work";
-import { projects } from "../constants";
+import { Products } from "../components/products";
+import contents from "../utils/content";
 
-function ProjectsScreen() {
+export default function App() {
   return (
-    <div>
-      {projects.map((project, ind) => (
-        <Work
-          key={ind}
-          title={project.title}
-          body={project.body}
-          tags={project.tags}
-        />
-      ))}
+    <div className="section-card" data-aos="fade-top">
+      <div style={{ marginTop: "24px" }}>
+        <h3>Benventi nel mio portfolio online </h3>
+        <p style={{ marginTop: "16px" }}>
+          Sono entusiasta di mostrarti una serie di progetti che ho realizzato.
+          Prenditi il tempo per esplorare e non esitare a contattarmi se hai
+          domande o feedback.
+        </p>
+      </div>
+      <div
+        style={{ marginTop: "12px", marginBottom: "50px" }}
+        data-aos="fade-top"
+      >
+        {contents.map((contents) => (
+          <Products
+            key={contents.id}
+            title={contents.title}
+            body={contents.body}
+          />
+        ))}
+      </div>
     </div>
   );
 }
-
-export default ProjectsScreen;
