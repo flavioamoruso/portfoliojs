@@ -3,8 +3,8 @@ import contents from "../utils/content";
 
 export default function App() {
   return (
-    <div className="section-card" data-aos="fade-top">
-      <div style={{ marginTop: "24px" }}>
+    <>
+      <div style={{ marginTop: "24px", textAlign: "center" }}>
         <h3>Benventi nel mio portfolio online </h3>
         <p style={{ marginTop: "16px" }}>
           Sono entusiasta di mostrarti una serie di progetti che ho realizzato.
@@ -12,6 +12,7 @@ export default function App() {
           domande o feedback.
         </p>
       </div>
+
       <div
         style={{ marginTop: "12px", marginBottom: "50px" }}
         data-aos="fade-top"
@@ -21,9 +22,10 @@ export default function App() {
             key={contents.id}
             title={contents.title}
             body={contents.body}
+            img={contents.img}
           />
         ))}
       </div>
-    </div>
+    </>
   );
 }
