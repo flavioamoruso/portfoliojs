@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
 import animationData from "../assets/animation/animationHome.json";
 import AOS from "aos";
+import SectionOne from "./SectionScreen";
 
 function Animation() {
   useEffect(() => {
@@ -51,6 +52,7 @@ const HomeScreen = () => {
           />
         </div>
       </div>
+      <SectionOne />
     </>
   );
 };
