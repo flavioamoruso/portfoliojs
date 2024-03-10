@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 export function Products(props) {
   return (
     <>
-      <div style={{ marginBottom: "20px" }}>
+      <div style={{ marginBottom: "20px" }} data-aos="fade-up">
         <div class="temporary__storage">
           <div class="card">
             <img src={props.img} alt="product-img" className="image"></img>
@@ -19,7 +19,7 @@ export function Products(props) {
                 <div class="content__body">
                   <span class="event">{props.body}</span>
                 </div>
-                <button className="categories__btn">
+                <button className="btn categories__btn">
                   <a href={props.code}>
                     GitHub <FaGithub />
                   </a>

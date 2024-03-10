@@ -61,16 +61,18 @@ body {
   --text-input:#1d87a7;
   --pallino:#00bfff;
   --button-input:#00bfff;
+  --background-card:#a8c1c8;
 }
 
 .dark-mode {
   --nav-colors-2: #4c4b4b;
   --text-color: #0ed29b;
-  --btn-up: #000;
+  --btn-up: #0ed29b;
   --input-back:#1a1a1a;
   --text-input:#0ed29b;
   --pallino:#0ed29b;
   --button-input:#0ed29b;
+  --background-card:#161616;
 }
 
 
@@ -519,7 +521,7 @@ END SIDEBAR STYLE
   /*delete this*/
   width: 350px;
   height: 350px;
-  background: #1b1a1a;
+  background: var(--background-card);
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -530,7 +532,6 @@ END SIDEBAR STYLE
 .card {
   width: 320px;
   height: 300px;
-  background: #1b1a1a;
   position: relative;
   color: #e6e6ea;
   display: flex;
@@ -543,30 +544,6 @@ END SIDEBAR STYLE
   height: auto;
 }
 
-.image::before {
-  content: "LIVE";
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  font-weight: 900;
-  font-size: 0.8em;
-  background-color: rgb(228, 33, 33);
-  border-radius: 5px;
-  padding: 3px 5px;
-}
-
-.image::after {
-  content: "102.2k viewers";
-  position: absolute;
-  bottom: 7px;
-  left: 7px;
-  font-weight: 300;
-  font-size: 0.7em;
-  background-color: rgb(59, 53, 53);
-  border-radius: 2px;
-  padding: 3px 5px;
-}
-
 .image__overlay {
   width: 100%;
   height: 180px;
@@ -575,14 +552,14 @@ END SIDEBAR STYLE
 .image:hover {
   transform: translate(8px, -8px);
   box-shadow:
-    -1px 1px 0px 0px violet,
-    -2px 2px 0px 0px violet,
-    -3px 3px 0px 0px violet,
-    -4px 4px 0px 0px violet,
-    -5px 5px 0px 0px violet,
-    -6px 6px 0px 0px violet,
-    -7px 7px 0px 0px violet,
-    -8px 8px 0px 0px violet;
+    -1px 1px 0px 0px var(--text-color),
+    -2px 2px 0px 0px var(--text-color),
+    -3px 3px 0px 0px var(--text-color),
+    -4px 4px 0px 0px var(--text-color),
+    -5px 5px 0px 0px var(--text-color),
+    -6px 6px 0px 0px var(--text-color),
+    -7px 7px 0px 0px var(--text-color),
+    -8px 8px 0px 0px var(--text-color);
 }
 
 .avatar {
@@ -634,15 +611,15 @@ END SIDEBAR STYLE
 .event {
   font-size: 0.8em;
   font-weight: 400;
-  color: rgb(216, 213, 213);
+  color: var(--text-color);
 }
 
 .categories__btn {
   text-decoration: none;
-  color: rgb(216, 213, 213);
+  color: white;
   font-size: 0.8em;
-  background-color: rgb(73, 71, 71);
-  padding: 3px 10px;
+  background-color: var(--text-color);
+  padding:5px;
   border-radius: 15px;
 }
 
@@ -652,7 +629,7 @@ END SIDEBAR STYLE
 }
 
 .categories__btn:hover {
-  background-color: rgb(79, 79, 79);
+  background-color: var(--input-back);
 }
 
 /* end card------------ */
