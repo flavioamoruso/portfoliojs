@@ -34,7 +34,7 @@ const Contact = () => {
                   className="input"
                   type="text"
                   name="name"
-                  placeholder=""
+                  placeholder="Bob"
                   required=""
                 />
                 <span>Nome</span>
@@ -45,10 +45,20 @@ const Contact = () => {
                   className="input"
                   type="text"
                   name="surname"
-                  placeholder=""
+                  placeholder="Marley"
                   required=""
                 />
                 <span>Cognome</span>
+              </label>
+              <label>
+                <input
+                  className="input"
+                  type="number"
+                  name="number"
+                  placeholder="+39 3467789764"
+                  required=""
+                />
+                <span>Cellulare</span>
               </label>
             </div>
 
@@ -57,13 +67,17 @@ const Contact = () => {
                 className="input"
                 type="email"
                 name="email"
-                placeholder=""
+                placeholder="bobmarley@gmail.com"
                 required=""
               />
               <span>Email</span>
             </label>
             <label>
-              <textarea placeholder="" name="message" className="input" />
+              <textarea
+                placeholder="Cosa ti serve?"
+                name="message"
+                className="input"
+              />
               <span>Richiesta</span>
             </label>
             <button style={{ cursor: "pointer" }} type="submit" class="submit">

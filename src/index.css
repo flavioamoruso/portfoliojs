@@ -58,7 +58,7 @@ body {
   --text-color: #0A369D;
   --btn-up: #1a44a5;
   --input-back:#92c0dda0;
-  --text-input:#002733;
+  --text-input:#1d87a7;
   --pallino:#00bfff;
   --button-input:#00bfff;
 }
@@ -486,6 +486,8 @@ END SIDEBAR STYLE
 ====================
 */
 
+/* form contact */
+
 .form {
   display: flex;
   flex-direction: column;
@@ -626,15 +628,6 @@ END SIDEBAR STYLE
 
 /* END FORM---------------- */
 
-/*
-====================
-HERO STYLE
-====================
-*/
-
-
-
-
 
 .hero-container {
   height: 100%;
@@ -720,14 +713,6 @@ HERO STYLE
     grid-column: 8/-1;
   }
 }
-
-/*
-====================
-HOMESCREEN STYLE
-====================
-*/
-
-
 
 
 /*
