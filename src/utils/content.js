@@ -3,7 +3,7 @@ const projects = [
     id: "1",
     title: "Presto Javascript",
     body: "Un sito dinamico con le funzionalità più importanti di Javascript in cui al suo interno sono presenti diversi modelli di scarpe Nike",
-    img: "https://assets.bitdegree.org/online-learning-platforms/storage/media/2018/08/what-is-a-web-developer.jpg",
+    img: "https://woz-u.com/wp-content/uploads/2020/02/What-Do-Software-Engineers-Do-WOZ-1-min.png",
     icon: "🚀",
     code: "https://github.com/flavioamoruso/flavio_amoruso_prestojavascript",
   },
