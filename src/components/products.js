@@ -10,13 +10,8 @@ const StyledCard = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 100px;
   }
-
-  /* @media screen and(max-width:698px) {
-    .temporary__storage {
-      width: 100px;
-    }
-  } */
 
   .card {
     width: 320px;
@@ -30,12 +25,8 @@ const StyledCard = styled.div`
   }
 
   .image {
-    width: 100%;
-    height: 180px;
-    position: absolute;
-    background-color: rgb(144, 197, 47);
-    cursor: pointer;
-    transition: all 0.2s ease;
+    max-width: 100%;
+    height: auto;
   }
 
   .image::before {
@@ -164,16 +155,21 @@ export function Products(props) {
       >
         <div class="temporary__storage">
           <div class="card">
-            <div class="image"></div>
+            <img src={props.img} alt="product-img" className="image"></img>
             <div class="image__overlay"></div>
             <div class="content">
               <div class="avatar"></div>
               <div class="content__text">
-                <span class="stream__title">🚀{props.title}</span>
+                <span class="stream__title">
+                  {props.icon}
+                  {props.title}
+                </span>
                 <div class="content__body">
                   <span class="event">{props.body}</span>
                 </div>
-                <button className="btn">GitHub</button>
+                <button className="categories__btn">
+                  <a href={props.code}>GitHub</a>
+                </button>
               </div>
             </div>
           </div>

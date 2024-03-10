@@ -23,6 +23,8 @@ export default function App() {
             title={contents.title}
             body={contents.body}
             img={contents.img}
+            icon={contents.icon}
+            code={contents.code}
           />
         ))}
       </div>
