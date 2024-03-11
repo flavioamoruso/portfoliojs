@@ -487,6 +487,10 @@ SIDEBAR MEDIA QUERY STYLE
 END SIDEBAR STYLE
 ====================
 */
+
+
+/* SKILL CARD--------------------------------- */
+
 .skill-container{
   display: flex;
   flex-wrap: wrap;
@@ -510,9 +514,13 @@ END SIDEBAR STYLE
   margin-top: 10px;
 }
 
-/* card------------------ */
+/* END SKILL CARD--------------------- */
 
 
+
+
+
+/* CARD------------------------- */
 .div {
   display: flex;
   flex-wrap: wrap;
@@ -653,7 +661,7 @@ END SIDEBAR STYLE
   background-color: var(--input-back);
 }
 
-/* end card------------ */
+/* END CARD------------ */
 
 
 
