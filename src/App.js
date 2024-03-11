@@ -19,6 +19,7 @@ function App() {
           <Route path="/contact" Component={Contact} />
           <Route path="*" Component={ErrorScreen} />
         </Routes>
+
         <Footer />
       </Router>
     </>

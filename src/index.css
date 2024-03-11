@@ -865,6 +865,27 @@ END SIDEBAR STYLE
 }
 
 
+/* 
+==========================
+SKILLS
+==========================
+*/
+
+.introduce-skill{
+  text-align: center;
+  flex-direction: column;
+  margin: 30px;
+}
+
+
+
+/* 
+==========================
+END SKILLS
+==========================
+*/
+
+
 /*
 ====================
 FOOTER STYLE
