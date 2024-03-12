@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import styled from "styled-components";
 import AOS from "aos";
+import { MdMarkEmailRead } from "react-icons/md";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 function Animation() {
   useEffect(() => {
@@ -17,8 +18,12 @@ const Contact = () => {
             <h3 className="brand-color">
               Per maggiori informazioni non esitate a contattarmi
             </h3>
-            <p>Email: flavioamoruso6@gmail.com</p>
-            <p>Telefono: +39 3703081095</p>
+            <p>
+              <MdMarkEmailRead /> Email: flavioamoruso6@gmail.com{" "}
+            </p>
+            <p>
+              <BsFillTelephoneFill /> Telefono: +39 3703081095{" "}
+            </p>
           </div>
         </div>
         <div className="home-hero-img focus-in-contract-bck">
