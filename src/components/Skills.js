@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <>
       <div data-aos="zoom-in">
-        <section className="introduce-skill" id="skills">
+        <section className="introduce-skill">
           <h2>Le mie skills</h2>
           <p style={{ marginTop: "14px" }}>
             Scrivo codice usando i linguaggi seguenti:

@@ -790,7 +790,9 @@ END SIDEBAR STYLE
 }
 
 .submit:hover {
-  background-color: #00bfff96;
+  background: transparent;
+  transition: 0.5s;
+  color: var(--button-input);
 }
 
 @keyframes pulse {

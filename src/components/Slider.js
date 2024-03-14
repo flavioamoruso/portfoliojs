@@ -10,11 +10,13 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import Sliderone from "../assets/image/slider1.jpg";
 import Slidertwo from "../assets/image/slider2.jpg";
+import Sliderthree from "../assets/image/slider3.jpg";
+import Sliderfour from "../assets/image/slider4.jpg";
 
 export default function Slider() {
   return (
     <>
-      <div className="home-hero" data-aos="fade-left">
+      <div className="home-hero" data-aos="zoom-in" id="about">
         <div className="home-hero-text">
           <div className="home-hero-title">
             <h2 className="brand-color">Chi sono?</h2>
@@ -67,25 +69,18 @@ export default function Slider() {
               />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              <img
+                src={Sliderthree}
+                alt="slider-3"
+                style={{ width: "396px", height: "396px" }}
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+              <img
+                src={Sliderfour}
+                alt="slider-4"
+                style={{ width: "396px", height: "396px" }}
+              />
             </SwiperSlide>
           </Swiper>
         </div>

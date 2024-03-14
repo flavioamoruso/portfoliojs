@@ -35,7 +35,7 @@ const HomeScreen = () => {
               Contattami
             </Link>
             <span className="btn btn-primary" style={{ marginLeft: "10px" }}>
-              <a href="#skills">Scopri di più</a>
+              <a href="#about">Scopri di più</a>
             </span>
           </span>
         </div>
