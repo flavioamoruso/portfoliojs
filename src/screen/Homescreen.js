@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Skills from "../components/Skills";
+import Slider from "../components/Slider";
 import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
 import animationData from "../assets/animation/animationHome.json";
@@ -53,6 +54,7 @@ const HomeScreen = () => {
         </div>
       </div>
       <Skills />
+      <Slider />
     </>
   );
 };
