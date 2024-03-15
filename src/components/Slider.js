@@ -46,7 +46,7 @@ export default function Slider() {
         </div>
         <div className="home-hero-img focus-in-contract-bck">
           <Swiper
-            style={{ marginBottom: "30px" }}
+            style={{ marginTop: "34px", marginBottom: "50px" }}
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
