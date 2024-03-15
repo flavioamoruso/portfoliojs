@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -6,12 +6,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import AOS from "aos";
 
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import Sliderone from "../assets/image/slider1.jpg";
 import Slidertwo from "../assets/image/slider2.jpg";
 import Sliderthree from "../assets/image/slider3.jpg";
 import Sliderfour from "../assets/image/slider4.jpg";
+
+function Animation() {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+}
 
 export default function Slider() {
   return (
@@ -39,6 +46,7 @@ export default function Slider() {
         </div>
         <div className="home-hero-img focus-in-contract-bck">
           <Swiper
+            style={{ marginBottom: "30px" }}
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
@@ -90,3 +98,4 @@ export default function Slider() {
 }
 
 export { Slider };
+export { Animation };
