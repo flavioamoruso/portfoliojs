@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import { MdMarkEmailRead } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import useTitle from "../useTitle";
 
 function Animation() {
   useEffect(() => {
@@ -10,6 +11,7 @@ function Animation() {
 }
 
 const Contact = () => {
+  useTitle("Contattami");
   return (
     <>
       <div className="home-hero" data-aos="fade-left">

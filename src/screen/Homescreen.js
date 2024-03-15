@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
 import animationData from "../assets/animation/animationHome.json";
 import AOS from "aos";
+import useTitle from "../useTitle";
 
 function Animation() {
   useEffect(() => {
@@ -13,6 +14,7 @@ function Animation() {
 }
 
 const HomeScreen = () => {
+  useTitle("Home");
   return (
     <>
       <div className="home-hero" data-aos="fade-left">

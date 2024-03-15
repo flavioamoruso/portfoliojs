@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Lottie from "react-lottie";
 import animationdata from "../assets/animation/animationError.json";
+import useTitle from "../useTitle";
 
 const Wrapper = styled.section`
   min-height: 86.2vh;
@@ -21,6 +22,7 @@ const Wrapper = styled.section`
 `;
 
 const ErrorScreen = () => {
+  useTitle("Not Found");
   return (
     <>
       <Wrapper>

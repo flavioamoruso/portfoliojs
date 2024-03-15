@@ -15,7 +15,7 @@
   /*Scala di Grigi*/
   --extra-light-gray: #f8f9faff;
   --soft-light-gray: #f2f2f3;
-  --light-gray: #ced4daff;
+  --light-gray: rgb(158, 164, 169);
   --primary-gray: #adb5bdff;
   --soft-dark-gray: #89949e;
   --dark-gray: #6c757dff;

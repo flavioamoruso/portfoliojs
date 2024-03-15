@@ -1,7 +1,9 @@
 import { Products } from "../components/products";
+import useTitle from "../useTitle";
 import contents from "../utils/content";
 
 export default function App() {
+  useTitle("Progetti");
   return (
     <>
       <div style={{ marginTop: "24px", textAlign: "center" }}>
