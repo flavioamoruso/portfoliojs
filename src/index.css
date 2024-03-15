@@ -922,7 +922,7 @@ FOOTER STYLE
 ====================
 */
 .footer {
-  background-color: var(--trypan-blue-2);
+  background-color: var(--input-back);
   height: 4rem;
 }
 
@@ -939,10 +939,6 @@ FOOTER STYLE
 
 .brand-color {
   color: var(--flickr-pink);
-}
-
-.brand-secondary-color {
-  color: var(--trypan-blue-2);
 }
 
 .footer-text {
