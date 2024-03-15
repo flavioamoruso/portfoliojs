@@ -2,15 +2,9 @@ import { useState, useContext, createContext, useEffect } from "react";
 
 const AppContext = createContext();
 
-const getFromLocalStorage = () => {
-  if (localStorage.getItem("theme")) {
-    return localStorage.getItem("theme");
-  }
-};
-
 const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [theme, setTheme] = useState(getFromLocalStorage());
+  const [theme, setTheme] = useState("light-mode");
 
   const cambiaTema = () => {
     if (theme === "light-mode") {

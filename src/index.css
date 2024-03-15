@@ -1096,6 +1096,11 @@ END FOOTER STYLE
   height: 300px;
 }
 
+.swiper-pagination-bullet-active{
+  opacity: 1;
+  background-color: var(--text-color) !important;
+}
+
 .swiper-slide img {
   display: block;
   width: 100%;
