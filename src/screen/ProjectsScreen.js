@@ -17,7 +17,7 @@ export default function App() {
 
       <div
         style={{ marginTop: "12px", marginBottom: "50px" }}
-        className="div"
+        className="position-card"
         data-aos="fade-top"
       >
         {contents.map((contents) => (

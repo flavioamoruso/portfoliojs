@@ -3,8 +3,11 @@ import { FaGithub } from "react-icons/fa";
 export function Products(props) {
   return (
     <>
-      <div style={{ marginBottom: "20px" }} data-aos="fade-up">
-        <div class="temporary__storage">
+      <div
+        style={{ marginTop: "40px", marginBottom: "20px" }}
+        data-aos="fade-up"
+      >
+        {/* <div class="temporary__storage">
           <div class="card">
             <img src={props.img} alt="product-img" className="image"></img>
             <div class="image__overlay"></div>
@@ -26,7 +29,27 @@ export function Products(props) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+        <article class="card">
+          <div class="card-img">
+            <div class="card-imgs pv delete"></div>
+          </div>
+
+          <div class="project-info">
+            <div class="flex">
+              <div class="project-title">
+                {props.icon} {props.title}
+              </div>
+              <span class="tag">
+                <a href={props.code}>
+                  <FaGithub />
+                </a>
+              </span>
+            </div>
+            <span class="lighter">{props.body}</span>
+          </div>
+        </article>
       </div>
     </>
   );

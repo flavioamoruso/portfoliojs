@@ -25,7 +25,7 @@ const projects = [
   },
   {
     id: "4",
-    title: "Cocktail & Dreams",
+    title: "Cocktail&Dreams",
     body: "Un sito web realizzato interamente con React con la possibilità di poter ricercare ogni tipo di drink al suo interno",
     img: "https://cialisonlinecialispricetrbd.com/wp-content/uploads/2023/09/calgary-web-development.png",
     icon: "💻",
